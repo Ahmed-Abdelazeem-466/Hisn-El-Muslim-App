@@ -76,52 +76,6 @@ test/                     Repository, persistence, navigation, and widget tests
 android/                  Native Android project and build configuration
 ```
 
-## Requirements
-
-Install the following before opening the project:
-
-- [Flutter stable](https://docs.flutter.dev/get-started/install)
-- Android Studio and Android SDK
-- Java 17 for the current Android build configuration
-- Visual Studio Code with the Flutter and Dart extensions, or another Flutter-compatible IDE
-
-## Run locally
-
-Clone the repository and run:
-
-```bash
-flutter doctor
-flutter pub get
-flutter analyze
-flutter test
-flutter run
-```
-
-To run on a physical Android phone:
-
-1. Enable Developer options and USB debugging.
-2. Connect the phone by USB and approve the authorization prompt.
-3. Confirm the device is visible with `flutter devices`.
-4. Run `flutter run` or press **F5** in Visual Studio Code.
-
-## Build an APK
-
-```bash
-flutter pub get
-flutter build apk --release
-```
-
-The APK is generated at:
-
-```text
-build/app/outputs/flutter-apk/app-release.apk
-```
-
-For a connected device, a development installation can be performed with:
-
-```bash
-adb install -r build/app/outputs/flutter-apk/app-release.apk
-```
 
 ## Release signing
 
@@ -154,12 +108,3 @@ The category tests verify that:
 
 This project is intended as an offline reading application. The bundled Arabic content and attribution information are kept in the repository’s data and source documentation. Please preserve those notices when redistributing or modifying the project.
 
-## License
-
-The application source code is released under the [MIT License](LICENSE).
-
-The Arabic remembrance text is not covered by that license. It comes from the sources listed in [`source/ATTRIBUTION.md`](source/ATTRIBUTION.md), and their terms apply. Please keep those notices when you reuse the content.
-
----
-
-*README drafted with AI assistance (Claude) and reviewed by the author.*
